@@ -1,0 +1,160 @@
+/* 배너 */
+#home {
+  width: 100%;
+  height: 100vh;
+  min-height: 550px;
+  padding: 0;
+  background-image: url(../images/main_backgroud1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+  background-position: 50% 0px;
+  display: flex;
+  justify-content: center;
+}
+#home .home-inner {
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#home .home-inner span {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+  border-right: 3px solid #fff;
+  animation: blink 1s infinite, typing 2s steps(30);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+#home .home-inner hr {
+  width: 50px;
+  height: 2px;
+  display: block;
+  background: #fff;
+  border: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#home .home-inner p {
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* about */
+#about1 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about1 .intro {
+  width: 1200px;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#about1 .intro .profile-img {
+  width: 30%;
+  height: 100%;
+}
+#about1 .intro .profile-img img {
+  width: 100%;
+  height: 100%;
+}
+#about1 .intro .aboutMe {
+  width: 65%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#about1 .intro .aboutMe h3 {
+  font-size: 40pt;
+}
+#about1 .intro .aboutMe h3 span {
+  font-size: 50pt;
+  font-weight: bold;
+}
+#about1 .intro .aboutMe p {
+  font-size: 13pt;
+  line-height: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+#about1 .intro .aboutMe p span {
+  color: #00ffff;
+}
+
+/* 반응형 */
+
+/* 태블릿 */
+@media screen and (max-width: 1024px) {
+  .home-inner {
+    width: 90%;
+  }
+  #home .home-inner span {
+    font-size: 20px;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 768px) {
+  .home-inner {
+    width: 90%;
+  }
+  .home-inner span {
+    font-size: 30px;
+  }
+  #about1 {
+    height: 100%;
+  }
+  #about1 .intro {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+  #about1 .intro .profile-img {
+    width: 100%;
+    height: 100%;
+  }
+  #about1 .intro .profile-img img {
+    width: 100%;
+    height: 100%;
+    size: cover;
+  }
+  #about1 .intro .aboutMe {
+    width: 100%;
+    font-size: 12px;
+  }
+  #about1 .intro .aboutMe h3 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  #about1 .intro .aboutMe h3 span {
+    font-size: 40px;
+  }
+  #about1 .intro .aboutMe p {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+}
