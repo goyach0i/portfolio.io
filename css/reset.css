@@ -92,6 +92,9 @@ video {
   font-weight: 400;
   scroll-behavior: smooth;
 }
+body{
+  background-color: rgb(165 165 165);
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -115,7 +118,7 @@ body {
 }
 ol,
 ul {
-  /* list-style: none; */
+  list-style: none;
 }
 blockquote,
 q {
@@ -134,7 +137,8 @@ table {
 }
 a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.75);
+  /* color: rgba(255, 255, 255, 0.75); */
+  color: #000;
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   cursor: none;
 }

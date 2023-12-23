@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="cursor">
-      <div class="cursor_default">
-        <span class="cursor_default_inner"></span>
-      </div>
-      <div class="cursor_trace">
-        <span class="cursor_trace_inner"></span>
-      </div>
-    </div>
     <div id="wrap">
+      <div class="cursor">
+        <div class="cursor_default">
+          <span class="cursor_default_inner"></span>
+        </div>
+        <div class="cursor_trace">
+          <span class="cursor_trace_inner"></span>
+        </div>
+      </div>
+      <a href="#" class="top-btn"> ↑ </a>
       <header id="header">
         <div class="header-inner">
           <div class="logo">
@@ -33,12 +34,13 @@
           <nav>
             <ul class="nav">
               <li><a href="#home">HOME</a></li>
-              <li><a href="#about1">ABOUT</a></li>
-              <li><a href="#kmong">KMONG</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
             </ul>
           </nav>
         </div>
       </header>
+
       <section id="home">
         <div class="home-inner">
           <span class="typed"> WELCOME TO CHOIGOYA PORTFOLIO </span>
@@ -46,7 +48,7 @@
           <p>웹 퍼블리셔 최윤도입니다.</p>
         </div>
       </section>
-      <section id="about1">
+      <section id="about">
         <div class="intro">
           <div class="profile-img">
             <img src="./images/profile.jpg.jfif" alt="" />
@@ -66,8 +68,11 @@
               협업과 유지보수에 문제없는 소통과 좋은 코드를 짜기위해 꾸준히
               공부중입니다.
               <br />
-              현재 <span>크몽</span>에서 의뢰인과 소통하며 작업한 경험이 있고,
-              이러한 경험을 토대로
+              현재 <span>데일리잡</span>에서 기업에게 영업과 간단한 채용공고
+              퍼블리싱을하며 영업에 관한 업무를 하고있으며,
+              <br />
+              <span>크몽</span>에서 의뢰인과 소통하며 작업한 경험이 있고, 이러한
+              경험을 토대로
               <br />
               개발자로서 이용자에게도 만족으러운 결과를 위해 노력하는것이 제
               일이라고 생각합니다.
@@ -84,8 +89,99 @@
           </div>
         </div>
       </section>
+      <section id="portfolio">
+        <div class="portfolio-header">
+          <h1 class="title">PORTFOLIO</h1>
+        </div>
+        <div class="border">*</div>
+        <div class="grid">
+          <div class="list">
+            <div class="list-img">
+              <img src="./images/dnbcode.png" alt="DnB code" />
+            </div>
+            <h3>디엔비코드</h3>
+            <div class="list-hover">
+              <h1>반응형</h1>
+              <h1>HTML, CSS</h1>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-img">
+              <img src="./images/netflix.png" alt="NETFLIX" />
+            </div>
+            <h3>NETFLIX</h3>
+            <div class="list-hover">
+              <h1>반응형</h1>
+              <h1>HTML, CSS</h1>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-img">
+              <img src="./images/velog.png" alt="velog" />
+            </div>
+            <h3>Velog</h3>
+            <div class="list-hover">
+              <h1>반응형</h1>
+              <h1>HTML, CSS</h1>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-img">
+              <img src="./images/standard.png" alt="web standard" />
+            </div>
+            <h3>웹 표준 홈페이지</h3>
+            <div class="list-hover">
+              <h1>PC</h1>
+              <h1 style="font-size: 14pt">HTML, CSS, Javascript</h1>
+            </div>
+          </div>
+          <a
+            href="https://goyach0i.github.io/neighborSystem.io/"
+            target="_blank"
+          >
+            <div class="list">
+              <div class="list-img">
+                <img src="./images/uam.png" alt="kmong UAM" />
+              </div>
+              <h3>크몽 - UAM 항공플랫폼</h3>
+              <div class="list-hover">
+                <h1>PC</h1>
+                <h1 style="font-size: 14pt">HTML, CSS, Javascript</h1>
+              </div>
+            </div>
+          </a>
+          <div class="list">
+            <div class="list-img">
+              <img src="./images/kmong.png" alt="kmong Project" />
+            </div>
+            <h3>크몽 - Project</h3>
+            <div class="list-hover">
+              <h1>PC</h1>
+              <h1>HTML, CSS</h1>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-img">
+              <img src="./images/framework.png" alt="kmong framework" />
+            </div>
+            <h3>크몽 - page framework</h3>
+            <div class="list-hover">
+              <h1>PC</h1>
+              <h1>HTML, CSS</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer_inner">
+          Thanks for visiting my Website.
+          <br />
+          <br />
+          Copyright ⓒ 2023. Yundo Choi All rights reserved.
+        </div>
+      </footer>
     </div>
-    <script src="./js/index.js"></script>
     <script src="./js/cursor.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

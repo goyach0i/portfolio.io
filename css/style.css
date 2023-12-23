@@ -59,55 +59,189 @@
   font-weight: 500;
 }
 /* about */
-#about1 {
+#about {
   width: 100%;
   height: 100vh;
-  background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#about1 .intro {
-  width: 1200px;
+#about .intro {
+  width: 1280px;
   height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-#about1 .intro .profile-img {
+#about .intro .profile-img {
   width: 30%;
   height: 100%;
 }
-#about1 .intro .profile-img img {
+#about .intro .profile-img img {
   width: 100%;
   height: 100%;
 }
-#about1 .intro .aboutMe {
-  width: 65%;
+#about .intro .aboutMe {
+  width: 67%;
   height: 100%;
-  color: #fff;
+  color: #000;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#about1 .intro .aboutMe h3 {
+#about .intro .aboutMe h3 {
   font-size: 40pt;
 }
-#about1 .intro .aboutMe h3 span {
+#about .intro .aboutMe h3 span {
   font-size: 50pt;
   font-weight: bold;
 }
-#about1 .intro .aboutMe p {
+#about .intro .aboutMe p {
   font-size: 13pt;
   line-height: 30px;
   font-family: 'Roboto', sans-serif;
 }
-#about1 .intro .aboutMe p span {
-  color: #00ffff;
+#about .intro .aboutMe p span {
+  font-size: 15pt;
+  font-weight: 600;
+}
+
+/* portfolio */
+#portfolio {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0;
+  background-color: rgb(165 165 165);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .portfolio-header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#portfolio .portfolio-header .title {
+  font-size: 30pt;
+  font-weight: 600;
+}
+#portfolio .portfolio-header .portfolio-menu {
+  display: flex;
+  gap: 40px;
+}
+#portfolio .portfolio-header .portfolio-menu .btn {
+  width: 130px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  font-size: 10pt;
+}
+#portfolio .portfolio-header .portfolio-menu .on {
+  background-color: #636c77;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+#portfolio .border {
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+#portfolio .border::before {
+  display: inline-block;
+  margin: -15px 10px 0 0;
+  vertical-align: middle;
+  content: '';
+  background-color: #333;
+  width: 30px;
+  height: 1px;
+}
+
+#portfolio .border::after {
+  display: inline-block;
+  margin: -15px 0 0 10px;
+  vertical-align: middle;
+  content: '';
+  background-color: #333;
+  width: 30px;
+  height: 1px;
+}
+
+#portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#portfolio .grid .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 10px 5px 5px #888;
+}
+
+#portfolio .grid .list .list-hover {
+  width: 187px;
+  height: 224px;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(91, 119, 244);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+#portfolio .grid .list:hover .list-hover {
+  opacity: 0.8;
+  transition: opacity 0.35s;
+}
+
+#portfolio .grid .list .list-img img {
+  width: 184px;
+  height: 196px;
+}
+
+#portfolio .grid .list h3 {
+  padding: 10px 0 0 0;
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+/* footer */
+footer {
+  display: table;
+  width: 100%;
+  background: #3c4046;
+  padding: 40px 0;
+}
+.footer_inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
 }
 
 /* 반응형 */
-
 /* 태블릿 */
 @media screen and (max-width: 1024px) {
   .home-inner {
@@ -117,6 +251,7 @@
     font-size: 20px;
   }
 }
+
 /* 모바일 */
 @media screen and (max-width: 768px) {
   .home-inner {
@@ -125,36 +260,51 @@
   .home-inner span {
     font-size: 30px;
   }
-  #about1 {
-    height: 100%;
+  #about {
+    height: auto;
+    padding-top: 100px;
   }
-  #about1 .intro {
+  #about .intro {
     width: 90%;
     height: auto;
     flex-direction: column;
   }
-  #about1 .intro .profile-img {
+  #about .intro .profile-img {
     width: 100%;
     height: 100%;
   }
-  #about1 .intro .profile-img img {
+  #about .intro .profile-img img {
     width: 100%;
     height: 100%;
     size: cover;
   }
-  #about1 .intro .aboutMe {
+  #about .intro .aboutMe {
     width: 100%;
     font-size: 12px;
   }
-  #about1 .intro .aboutMe h3 {
+  #about .intro .aboutMe h3 {
     font-size: 30px;
     margin-top: 30px;
   }
-  #about1 .intro .aboutMe h3 span {
+  #about .intro .aboutMe h3 span {
     font-size: 40px;
   }
-  #about1 .intro .aboutMe p {
+  #about .intro .aboutMe p {
     margin-top: 30px;
     font-size: 14px;
+  }
+  #portfolio {
+    width: 100%;
+    height: auto;
+  }
+  #portfolio .portfolio-header .portfolio-menu {
+    gap: 0px;
+  }
+  #portfolio .grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
