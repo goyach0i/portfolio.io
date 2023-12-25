@@ -68,22 +68,34 @@
   align-items: center;
 }
 #about .intro {
-  width: 1280px;
+  width: 80%;
   height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 #about .intro .profile-img {
-  width: 30%;
+  width: 40%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 #about .intro .profile-img img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 70%;
+}
+#about .intro .profile-img button{
+  width: 170px;
+  height: 40px;
+  font-size: 13pt;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: #333 2px 2px 2px;
 }
 #about .intro .aboutMe {
-  width: 67%;
+  width: 55%;
   height: 100%;
   color: #000;
   display: flex;
