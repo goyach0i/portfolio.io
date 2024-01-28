@@ -1,11 +1,11 @@
-
 /* 배너 */
 #home {
   width: 100%;
   height: 100vh;
   min-height: 550px;
   padding: 0;
-  background-image: url(../images/main_backgroud1.jpg);
+  box-shadow: 0 4px 20px -4px #dbdbdb;
+  background-color: #fff;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -24,9 +24,9 @@
 }
 #home .home-inner span {
   font-size: 40px;
-  color: #fff;
+  color: #000;
   font-weight: 500;
-  border-right: 3px solid #fff;
+  border-right: 3px solid #000;
   animation: blink 1s infinite, typing 2s steps(30);
   white-space: nowrap;
   overflow: hidden;
@@ -48,13 +48,13 @@
   width: 50px;
   height: 2px;
   display: block;
-  background: #fff;
+  background: #000;
   border: 0;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 #home .home-inner p {
-  color: #fff;
+  color: #000;
   letter-spacing: 5px;
   font-size: 20px;
   font-weight: 500;
@@ -63,6 +63,10 @@
 #about {
   width: 100%;
   height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 4px 20px -4px #dbdbdb;
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +89,9 @@
 #about .intro .profile-img img {
   width: 90%;
   height: 70%;
+  box-shadow: 0 4px 20px -4px #dbdbdb;
 }
-#about .intro .profile-img button{
+#about .intro .profile-img button {
   width: 170px;
   height: 40px;
   font-size: 13pt;
@@ -101,6 +106,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #fff;
 }
 #about .intro .aboutMe h3 {
   font-size: 40pt;
@@ -124,7 +130,7 @@
   width: 100%;
   height: 100vh;
   padding: 50px 0;
-  background-color: rgb(165 165 165);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
