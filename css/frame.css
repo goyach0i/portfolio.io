@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 999;
   font-size: 15pt;
   font-weight: 600;
   color: #000;
@@ -27,7 +27,7 @@
   height: 70px;
   position: fixed;
   z-index: 999;
-  background-color: #fff;
+  background-color: #0000000d;
   box-shadow: 0 4px 20px -4px #dbdbdb;
   box-sizing: border-box;
   transition: background-color 0.3s ease 0s, height 0.3s ease 0s;
@@ -55,7 +55,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-size: 16pt;
+  font-size: 14pt;
   color: #000;
   font-weight: 600;
 }
