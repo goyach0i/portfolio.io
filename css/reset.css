@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 html,
 body,
 div,
@@ -87,13 +88,14 @@ video {
   /* vertical-align: baseline; */
   /* font-family: 'Nanum Gothic', sans-serif; */
   /* font-family: 'Source Sans Pro', sans-serif; */
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Raleway', sans-serif;
   /* font-family: Poppins, Pretendard, 'sans-serif'; */
   font-weight: 400;
   scroll-behavior: smooth;
 }
-body{
-  background-color: rgb(165 165 165);
+body {
+  background-color: #333;
 }
 /* HTML5 display-role reset for older browsers */
 article,

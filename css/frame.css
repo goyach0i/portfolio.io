@@ -27,7 +27,7 @@
   height: 70px;
   position: fixed;
   z-index: 999;
-  background-color: #0000000d;
+  background-color: #3c404685;
   box-shadow: 0 4px 20px -4px #dbdbdb;
   box-sizing: border-box;
   transition: background-color 0.3s ease 0s, height 0.3s ease 0s;
@@ -41,6 +41,7 @@
   flex-direction: row;
   justify-content: space-between;
   border-radius: 1.8rem;
+
 }
 /* 로고 */
 .logo {
@@ -58,6 +59,7 @@
   font-size: 14pt;
   color: #000;
   font-weight: 600;
+  color: #fff;
 }
 .logoBox {
   width: 80px;
@@ -88,7 +90,7 @@ header .nav li {
   padding: 16px 20px;
 }
 header .nav li a {
-  color: #000;
+  color: #fff;
   font-weight: 600;
 }
 /* 반응형 */
